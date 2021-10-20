@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+h1 {
+    display: inline-block;
+    margin: 50px 0 10px 0;
+    color: hsl(223, 47%, 23%);
+}
+h2 {
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+    height: fit-content;
+
+}
+p {
+    display: inline-block;
+    color: hsl(224, 23%, 55%);
+}
+span {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 450px;
+    text-align: center;
+    margin: 60px auto;
+    background-color: hsl(225, 100%, 98%);  
+    border-radius: 12px;
+}
+
+.img-hero {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.order-description {
+    display: inline-block;
+    width: 90%;
+    line-height: 0.7cm;
+}
+
+.plan-div {
+    border-radius: 12px;
+    background-color: hsl(225, 100%, 94%);
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.music-icon {
+    float: left;
+}
+.plan-para {
+    margin: 0;
+    height: fit-content;
+}
+.span-div {
+    margin: 0 10px;
+}
+.change-plan-btn {
+    margin-left: auto;
+    height: fit-content;
+    
+}
+.change-plan-btn:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.proceed-btn {
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    padding: 15px 0px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 12px  #000000;
+}
+.proceed-btn:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+    display: block;
+    margin: 30px auto; 
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+
+}
+.order-description, .plan-div {
+    width: 90%;
+} 
+
+@media all and (max-width: 501px) {
+    .main-container {
+        background-color: hsl(225, 100%, 94%);
+        background-image: none;
+    }
+    .container {
+        width: 92%;
+    } 
+    .img-hero {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .order-description, .plan-div {
+        width: 90%;
+    } 
+}
